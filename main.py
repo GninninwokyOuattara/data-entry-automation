@@ -104,7 +104,7 @@ def requests_then_paginate(current_page, page_url):
         address = info.text
         url : str = info.get("href")
         if not url.startswith("https://"):
-            url = f"https://zillow.com{url}"
+            url = f"https://www.zillow.com{url}"
 
         article_obj = {
             "price" : price,
